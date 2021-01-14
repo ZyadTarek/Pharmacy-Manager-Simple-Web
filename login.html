@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light mb-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="imgs/logo.png" class="rounded-circle"style="height: 15%;width:25% ;" alt=""/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a id="shop" class="nav-link" href="#">Shop</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li> <li class="nav-item">
+                <a class="nav-link " href="#">Contact</a>
+              </li>
+              <li class="nav-item pt-2 pl-2">
+                <i id="cart"class="bi bi-cart4 text-light"><a class="nav-link" aria-current="page" href="#"></a></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+        <main class="my-5" >
+          <form class="container text-center" action="#">
+            <!-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <div class="col-auto">
+              <label for="User" class="visually-hidden">User Name</label>
+              <input type="text" id="User" class="form-control" placeholder="User Name" required="" autofocus="">
+            </div>
+            <div class="col-auto">
+              <label for="Pass" class="visually-hidden">Password</label>
+              <input type="password" id="Pass" class="form-control" placeholder="Password" required="">
+            </div>
+            <div class="col-auto">
+              <button id="loginbtn"class="w-100 btn btn-lg btn-primary mt-3" type="submit">Sign in</button>
+            </div>
+            <p class="mt-2">Not Registered yet ? <a href="signup.html">Sign Up</a></p>
+            <!-- <p class="mt-5 mb-3 text-muted">© 2017-2020</p> -->
+          </form>
+        </main>
+        <footer class="nav-bar my-2  navbar-expand-lg navbar-dark bg-dark mt-4">
+          <p class="text-center text-light py-4">Copyright &copy My Pharmacy 2021</p>
+      </footer>
+  
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/md5.js"></script>
+    <script src="node_modules/crypto-js/sha256.js"></script>
+    <script src="js/registration.js"></script>    
+   
+</body>
+</html>
